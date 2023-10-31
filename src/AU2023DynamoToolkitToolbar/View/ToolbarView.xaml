@@ -1,0 +1,63 @@
+﻿<mah:MetroWindow x:Class="AU2023DynamoToolkitToolbar.View.ToolbarView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        Title="AU2023 Canvas Assistant" 
+        Height="110" Width="450"
+        x:Name="AssistantWindow"
+        WindowStyle="ToolWindow"
+        ResizeMode="NoResize"
+         Margin="0"
+         Padding="0">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Themes/Light.Steel.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <!--<mah:MetroWindow.RightWindowCommands>
+        <mah:WindowCommands>
+            <Button ToolTip="{Binding DarkLightMode}"
+                    Command="{Binding SwitchTemplateModeCommand}"
+                    CommandParameter="{Binding ElementName=AssistantWindow}">
+                <iconPacks:Material Width="22"
+                                  Height="22"
+                                  Kind="ThemeLightDark" />
+            </Button>
+        </mah:WindowCommands>
+    </mah:MetroWindow.RightWindowCommands>-->
+    <Grid Margin="0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Image Source="../Resources/au-logo.jpg"/>
+        <UniformGrid Grid.Column="1" Margin="2,2,0,0" Columns="6" Rows="2">
+            <Button Height="45" Width="45" HorizontalAlignment="Center" VerticalAlignment="Center"
+                    BorderBrush="{x:Null}" Margin="0"
+                    Command="{Binding TemplateCommand}"
+                    CommandParameter="{Binding ElementName=AssistantWindow}">
+                <Button.ToolTip>
+                    <TextBlock>
+                        Add standard information template to current graph.<LineBreak/>The group will appear at the origin of the canvas.
+                    </TextBlock>
+                </Button.ToolTip>
+                <iconPacks:Material Kind="LightbulbGroup" Width="32" Height="32"/>
+            </Button>
+            <Button Height="45" Width="45" HorizontalAlignment="Center" VerticalAlignment="Center"
+                    BorderBrush="{x:Null}" Margin="0"
+                    Command="{Binding InfoGroupCommand}">
+                <Button.ToolTip>
+                    <TextBlock>
+                        Update selected Group(s) colour(s).<LineBreak/>Use this for any "Graph Information" nodes.
+                    </TextBlock>
+                </Button.ToolTip>
+                <iconPacks:Material Kind="FolderInformation" Width="32" Height="32"/>
+            </Button>
+        </UniformGrid>
+    </Grid>
+</mah:MetroWindow>

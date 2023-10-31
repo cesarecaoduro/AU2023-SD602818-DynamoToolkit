@@ -1,0 +1,11 @@
+C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitFunctions\bin\Debug Core\net48\AU2023DynamoToolkitFunctions.dll
+C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitFunctions\bin\Debug Core\net48\AU2023DynamoToolkitFunctions.pdb
+C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitFunctions\bin\Debug Core\net48\AU2023DynamoToolkitFunctions.xml
+C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitFunctions\obj\Debug Core\net48\AU2023DynamoToolkitFunctions.csproj.AssemblyReference.cache
+C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitFunctions\obj\Debug Core\net48\AU2023DynamoToolkitFunctions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitFunctions\obj\Debug Core\net48\AU2023DynamoToolkitFunctions.AssemblyInfoInputs.cache
+C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitFunctions\obj\Debug Core\net48\AU2023DynamoToolkitFunctions.AssemblyInfo.cs
+C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitFunctions\obj\Debug Core\net48\AU2023DynamoToolkitFunctions.csproj.CoreCompileInputs.cache
+C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitFunctions\obj\Debug Core\net48\AU2023DynamoToolkitFunctions.dll
+C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitFunctions\obj\Debug Core\net48\AU2023DynamoToolkitFunctions.xml
+C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitFunctions\obj\Debug Core\net48\AU2023DynamoToolkitFunctions.pdb

@@ -1,0 +1,628 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.8": {
+      "CommonServiceLocator/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/NET35/Microsoft.Practices.ServiceLocation.dll": {
+            "related": ".pdb;.XML"
+          }
+        },
+        "runtime": {
+          "lib/NET35/_._": {
+            "related": ".pdb;.XML"
+          }
+        }
+      },
+      "DynamoVisualProgramming.Core/2.16.2.5624": {
+        "type": "package",
+        "dependencies": {
+          "DynamoVisualProgramming.ZeroTouchLibrary": "2.16.2.5624",
+          "NUnit": "2.6.3",
+          "Newtonsoft.Json": "8.0.3",
+          "Prism": "4.1.0",
+          "System.Collections.Immutable": "1.7.1"
+        },
+        "compile": {
+          "lib/net48/DSCPython.dll": {},
+          "lib/net48/DesignScriptBuiltin.dll": {},
+          "lib/net48/DynamoApplications.dll": {},
+          "lib/net48/DynamoCore.dll": {},
+          "lib/net48/DynamoInstallDetective.dll": {},
+          "lib/net48/DynamoShapeManager.dll": {},
+          "lib/net48/DynamoUtilities.dll": {},
+          "lib/net48/ProtoCore.dll": {},
+          "lib/net48/VMDataBridge.dll": {}
+        },
+        "runtime": {
+          "lib/net48/_._": {}
+        }
+      },
+      "DynamoVisualProgramming.DynamoCoreNodes/2.16.2.5624": {
+        "type": "package",
+        "dependencies": {
+          "DynamoVisualProgramming.DynamoServices": "2.16.2.5624",
+          "DynamoVisualProgramming.ZeroTouchLibrary": "2.16.2.5624"
+        },
+        "compile": {
+          "lib/net48/Analysis.dll": {},
+          "lib/net48/DSCoreNodes.dll": {},
+          "lib/net48/GeometryColor.dll": {}
+        },
+        "runtime": {
+          "lib/net48/_._": {}
+        }
+      },
+      "DynamoVisualProgramming.DynamoServices/2.16.2.5624": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/DynamoServices.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/_._": {}
+        }
+      },
+      "DynamoVisualProgramming.ZeroTouchLibrary/2.16.2.5624": {
+        "type": "package",
+        "dependencies": {
+          "DynamoVisualProgramming.DynamoServices": "2.16.2.5624"
+        },
+        "compile": {
+          "lib/net48/DynamoUnits.dll": {},
+          "lib/net48/ProtoGeometry.dll": {}
+        },
+        "runtime": {
+          "lib/net48/_._": {}
+        }
+      },
+      "Newtonsoft.Json/8.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/_._": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Nice3point.Revit.Api.RevitAPI/2023.1.1": {
+        "type": "package",
+        "compile": {
+          "ref/net48/RevitAPI.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Nice3point.Revit.Api.RevitAPIUI/2023.1.1": {
+        "type": "package",
+        "compile": {
+          "ref/net48/RevitAPIUI.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "NUnit/2.6.3": {
+        "type": "package",
+        "compile": {
+          "lib/nunit.framework.dll": {}
+        },
+        "runtime": {
+          "lib/_._": {}
+        }
+      },
+      "Prism/4.1.0": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "1.0.0"
+        },
+        "compile": {
+          "lib/NET40/Microsoft.Expression.Interactions.dll": {},
+          "lib/NET40/Microsoft.Practices.Prism.Interactivity.dll": {
+            "related": ".xml"
+          },
+          "lib/NET40/Microsoft.Practices.Prism.dll": {
+            "related": ".Interactivity.xml;.xml"
+          },
+          "lib/NET40/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/NET40/_._": {}
+        }
+      },
+      "System.Buffers/4.5.1": {
+        "type": "package",
+        "compile": {
+          "ref/net45/System.Buffers.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/_._": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Collections.Immutable/1.7.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.4"
+        },
+        "compile": {
+          "lib/net461/System.Collections.Immutable.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/_._": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "compile": {
+          "lib/net461/System.Memory.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/_._": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/net46/System.Numerics.Vectors.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net46/_._": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "compile": {
+          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net461/_._": {
+            "related": ".xml"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CommonServiceLocator/1.0.0": {
+      "sha512": "RJjv0yxm+Fk/ak/CVMTGr0ng7g/nudkVYos4eQrIDpth3BdE1j7J2ddRm8FXtOoIZbgDqTU6hKq5zoackwL3HQ==",
+      "type": "package",
+      "path": "commonservicelocator/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "commonservicelocator.1.0.0.nupkg.sha512",
+        "commonservicelocator.nuspec",
+        "lib/NET35/Microsoft.Practices.ServiceLocation.XML",
+        "lib/NET35/Microsoft.Practices.ServiceLocation.dll",
+        "lib/NET35/Microsoft.Practices.ServiceLocation.pdb",
+        "lib/SL30/Microsoft.Practices.ServiceLocation.XML",
+        "lib/SL30/Microsoft.Practices.ServiceLocation.dll"
+      ]
+    },
+    "DynamoVisualProgramming.Core/2.16.2.5624": {
+      "sha512": "M2q7/Omuy7lseiVSKOzuouEJyb3rRFVHf98UuPe7dwkfdhZfA3eQ0enuiMWTZHNQ7SFkVqG4qvqjXOt0aH70bA==",
+      "type": "package",
+      "path": "dynamovisualprogramming.core/2.16.2.5624",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net48/DynamoCore.XML",
+        "content/images/logo.png",
+        "dynamovisualprogramming.core.2.16.2.5624.nupkg.sha512",
+        "dynamovisualprogramming.core.nuspec",
+        "lib/net48/DSCPython.dll",
+        "lib/net48/DesignScriptBuiltin.dll",
+        "lib/net48/DynamoApplications.dll",
+        "lib/net48/DynamoCore.dll",
+        "lib/net48/DynamoInstallDetective.dll",
+        "lib/net48/DynamoShapeManager.dll",
+        "lib/net48/DynamoUtilities.dll",
+        "lib/net48/ProtoCore.dll",
+        "lib/net48/VMDataBridge.dll"
+      ]
+    },
+    "DynamoVisualProgramming.DynamoCoreNodes/2.16.2.5624": {
+      "sha512": "oGbmX5poG5rAvlDDnR+xOtEy+LL+vYDeAGNs0qWwbHf3m8QAnATwlGoYea0+7IEv2ecWqjxWIPXnzOEOeMjxpw==",
+      "type": "package",
+      "path": "dynamovisualprogramming.dynamocorenodes/2.16.2.5624",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net48/Analysis.xml",
+        "build/net48/DSCoreNodes.xml",
+        "build/net48/GeometryColor.xml",
+        "content/images/logo.png",
+        "dynamovisualprogramming.dynamocorenodes.2.16.2.5624.nupkg.sha512",
+        "dynamovisualprogramming.dynamocorenodes.nuspec",
+        "lib/net48/Analysis.dll",
+        "lib/net48/DSCoreNodes.dll",
+        "lib/net48/GeometryColor.dll"
+      ]
+    },
+    "DynamoVisualProgramming.DynamoServices/2.16.2.5624": {
+      "sha512": "Xc4Ol/ROIUTuHt/W9M5o7Rmaw3C9m4MxuqxTEB+9tqsYHsi92r3eWE9zHFdJWNWifWSOfARz49aeOHmLXF0SnQ==",
+      "type": "package",
+      "path": "dynamovisualprogramming.dynamoservices/2.16.2.5624",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/netstandard2.0/DynamoServices.XML",
+        "content/images/logo.png",
+        "dynamovisualprogramming.dynamoservices.2.16.2.5624.nupkg.sha512",
+        "dynamovisualprogramming.dynamoservices.nuspec",
+        "lib/netstandard2.0/DynamoServices.dll"
+      ]
+    },
+    "DynamoVisualProgramming.ZeroTouchLibrary/2.16.2.5624": {
+      "sha512": "8+5LI+a2bgBWiyQ8kU9PmP/ZJ6GBfDWcezS3Yv2Ip43e928dHz5SyNvRKXmxPgLdDx1cwIPlsmnpxN4Zsbcg/w==",
+      "type": "package",
+      "path": "dynamovisualprogramming.zerotouchlibrary/2.16.2.5624",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net48/ProtoGeometry.XML",
+        "content/images/logo.png",
+        "dynamovisualprogramming.zerotouchlibrary.2.16.2.5624.nupkg.sha512",
+        "dynamovisualprogramming.zerotouchlibrary.nuspec",
+        "lib/net48/DynamoUnits.dll",
+        "lib/net48/ProtoGeometry.dll"
+      ]
+    },
+    "Newtonsoft.Json/8.0.3": {
+      "sha512": "KGsYQdS2zLH+H8x2cZaSI7e+YZ4SFIbyy1YJQYl6GYBWjf5o4H1A68nxyq+WTyVSOJQ4GqS/DiPE+UseUizgMg==",
+      "type": "package",
+      "path": "newtonsoft.json/8.0.3",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll",
+        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.xml",
+        "newtonsoft.json.8.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "tools/install.ps1"
+      ]
+    },
+    "Nice3point.Revit.Api.RevitAPI/2023.1.1": {
+      "sha512": "VAYOKJf11EawE1ttMyLDuemlkRBx2TCQFVM6+EYYcPO/3wbIqligTxPwWzpc70bfVtyPY58I+3h6Idnp2T2NmQ==",
+      "type": "package",
+      "path": "nice3point.revit.api.revitapi/2023.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License.md",
+        "images/PackageIcon.png",
+        "nice3point.revit.api.revitapi.2023.1.1.nupkg.sha512",
+        "nice3point.revit.api.revitapi.nuspec",
+        "ref/net48/RevitAPI.dll",
+        "ref/net48/RevitAPI.xml"
+      ]
+    },
+    "Nice3point.Revit.Api.RevitAPIUI/2023.1.1": {
+      "sha512": "KHTUISsEfvrcDdpg36wJCezqP7B4uwH9R3mLOM0K9MBT+PNV5wLSnrhi5vuPHx8kcIQKoNdLbQljh16/hSJz/A==",
+      "type": "package",
+      "path": "nice3point.revit.api.revitapiui/2023.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License.md",
+        "images/PackageIcon.png",
+        "nice3point.revit.api.revitapiui.2023.1.1.nupkg.sha512",
+        "nice3point.revit.api.revitapiui.nuspec",
+        "ref/net48/RevitAPIUI.dll",
+        "ref/net48/RevitAPIUI.xml"
+      ]
+    },
+    "NUnit/2.6.3": {
+      "sha512": "zGYW/N4U8H1Y6Xr6aGQZgaDtfpRJSlbx7A9Fg3WNUV3EKEUe1LwjnHw9NH81GVWYzKlOBLZmFp/q90YJwT2vzQ==",
+      "type": "package",
+      "path": "nunit/2.6.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/nunit.framework.dll",
+        "lib/nunit.framework.xml",
+        "license.txt",
+        "nunit.2.6.3.nupkg.sha512",
+        "nunit.nuspec"
+      ]
+    },
+    "Prism/4.1.0": {
+      "sha512": "V4pNkp9iutnJToIkPKeHaVT5M2m9sWTgq2xLHPD51OAg5VNS9oTx4E/vZMdXMcPQwpHbHlF04T8fMLKZTo8S3g==",
+      "type": "package",
+      "path": "prism/4.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/NET40/Microsoft.Expression.Interactions.dll",
+        "lib/NET40/Microsoft.Practices.Prism.Interactivity.dll",
+        "lib/NET40/Microsoft.Practices.Prism.Interactivity.xml",
+        "lib/NET40/Microsoft.Practices.Prism.dll",
+        "lib/NET40/Microsoft.Practices.Prism.xml",
+        "lib/NET40/System.Windows.Interactivity.dll",
+        "lib/SL4/Microsoft.Expression.Interactions.dll",
+        "lib/SL4/Microsoft.Practices.Prism.Interactivity.dll",
+        "lib/SL4/Microsoft.Practices.Prism.Interactivity.xml",
+        "lib/SL4/Microsoft.Practices.Prism.dll",
+        "lib/SL4/Microsoft.Practices.Prism.xml",
+        "lib/SL4/System.Windows.Interactivity.dll",
+        "lib/SL5/Microsoft.Expression.Interactions.dll",
+        "lib/SL5/Microsoft.Practices.Prism.Interactivity.dll",
+        "lib/SL5/Microsoft.Practices.Prism.Interactivity.xml",
+        "lib/SL5/Microsoft.Practices.Prism.dll",
+        "lib/SL5/Microsoft.Practices.Prism.xml",
+        "lib/SL5/System.Windows.Interactivity.dll",
+        "prism.4.1.0.nupkg.sha512",
+        "prism.nuspec"
+      ]
+    },
+    "System.Buffers/4.5.1": {
+      "sha512": "Rw7ijyl1qqRS0YQD/WycNst8hUUMgrMH4FCn1nNm27M4VxchZ1js3fVjQaANHO5f3sN4isvP4a+Met9Y4YomAg==",
+      "type": "package",
+      "path": "system.buffers/4.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Buffers.dll",
+        "lib/net461/System.Buffers.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.1/System.Buffers.dll",
+        "lib/netstandard1.1/System.Buffers.xml",
+        "lib/netstandard2.0/System.Buffers.dll",
+        "lib/netstandard2.0/System.Buffers.xml",
+        "lib/uap10.0.16299/_._",
+        "ref/net45/System.Buffers.dll",
+        "ref/net45/System.Buffers.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.1/System.Buffers.dll",
+        "ref/netstandard1.1/System.Buffers.xml",
+        "ref/netstandard2.0/System.Buffers.dll",
+        "ref/netstandard2.0/System.Buffers.xml",
+        "ref/uap10.0.16299/_._",
+        "system.buffers.4.5.1.nupkg.sha512",
+        "system.buffers.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Collections.Immutable/1.7.1": {
+      "sha512": "B43Zsz5EfMwyEbnObwRxW5u85fzJma3lrDeGcSAV1qkhSRTNY5uXAByTn9h9ddNdhM+4/YoLc/CI43umjwIl9Q==",
+      "type": "package",
+      "path": "system.collections.immutable/1.7.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Collections.Immutable.dll",
+        "lib/net461/System.Collections.Immutable.xml",
+        "lib/netstandard1.0/System.Collections.Immutable.dll",
+        "lib/netstandard1.0/System.Collections.Immutable.xml",
+        "lib/netstandard1.3/System.Collections.Immutable.dll",
+        "lib/netstandard1.3/System.Collections.Immutable.xml",
+        "lib/netstandard2.0/System.Collections.Immutable.dll",
+        "lib/netstandard2.0/System.Collections.Immutable.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.xml",
+        "system.collections.immutable.1.7.1.nupkg.sha512",
+        "system.collections.immutable.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Memory/4.5.4": {
+      "sha512": "1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
+      "type": "package",
+      "path": "system.memory/4.5.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Memory.dll",
+        "lib/net461/System.Memory.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.4.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Numerics.Vectors/4.5.0": {
+      "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
+      "type": "package",
+      "path": "system.numerics.vectors/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Numerics.Vectors.dll",
+        "lib/net46/System.Numerics.Vectors.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.Numerics.Vectors.dll",
+        "lib/netstandard1.0/System.Numerics.Vectors.xml",
+        "lib/netstandard2.0/System.Numerics.Vectors.dll",
+        "lib/netstandard2.0/System.Numerics.Vectors.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.xml",
+        "lib/uap10.0.16299/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/System.Numerics.Vectors.dll",
+        "ref/net45/System.Numerics.Vectors.xml",
+        "ref/net46/System.Numerics.Vectors.dll",
+        "ref/net46/System.Numerics.Vectors.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/System.Numerics.Vectors.dll",
+        "ref/netstandard1.0/System.Numerics.Vectors.xml",
+        "ref/netstandard2.0/System.Numerics.Vectors.dll",
+        "ref/netstandard2.0/System.Numerics.Vectors.xml",
+        "ref/uap10.0.16299/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.numerics.vectors.4.5.0.nupkg.sha512",
+        "system.numerics.vectors.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+      "sha512": "3TIsJhD1EiiT0w2CcDMN/iSSwnNnsrnbzeVHSKkaEgV85txMprmuO+Yq2AdSbeVGcg28pdNDTPK87tJhX7VFHw==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/4.5.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.8": [
+      "DynamoVisualProgramming.Core >= 2.16.*",
+      "DynamoVisualProgramming.DynamoCoreNodes >= 2.16.*",
+      "Nice3point.Revit.Api.RevitAPI >= 2023.*",
+      "Nice3point.Revit.Api.RevitAPIUI >= 2023.*"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\caoduroc\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "0.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\caoduroc\\Documents\\GitHub\\AU2023DynamoToolkit\\src\\AU2023DynamoToolkitFunctions\\AU2023DynamoToolkitFunctions.csproj",
+      "projectName": "AU2023DynamoToolkitFunctions",
+      "projectPath": "C:\\Users\\caoduroc\\Documents\\GitHub\\AU2023DynamoToolkit\\src\\AU2023DynamoToolkitFunctions\\AU2023DynamoToolkitFunctions.csproj",
+      "packagesPath": "C:\\Users\\caoduroc\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\caoduroc\\Documents\\GitHub\\AU2023DynamoToolkit\\src\\AU2023DynamoToolkitFunctions\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\caoduroc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net48"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net48": {
+        "targetAlias": "net48",
+        "dependencies": {
+          "DynamoVisualProgramming.Core": {
+            "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "target": "Package",
+            "version": "[2.16.*, )"
+          },
+          "DynamoVisualProgramming.DynamoCoreNodes": {
+            "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "target": "Package",
+            "version": "[2.16.*, )"
+          },
+          "Nice3point.Revit.Api.RevitAPI": {
+            "target": "Package",
+            "version": "[2023.*, )"
+          },
+          "Nice3point.Revit.Api.RevitAPIUI": {
+            "target": "Package",
+            "version": "[2023.*, )"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

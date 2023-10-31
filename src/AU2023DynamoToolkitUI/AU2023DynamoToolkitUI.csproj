@@ -1,0 +1,227 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Configurations>Debug R21;Debug R22;Debug R23;Debug R24;Release R21;Release R22;Release R23;Debug R23.1;Release R24;Release R23.1;Release Core;Debug Core</Configurations>
+    <Configurations>$(Configurations);Release Core;Release R21;Release R22;Release R23;Release R23.1;Release R24;</Configurations>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <Choose>
+    <When Condition="'$(AssemblyInformationalVersion)' == '' ">
+      <PropertyGroup>
+        <Version>0.0.0.0</Version>
+      </PropertyGroup>
+    </When>
+    <When Condition="'$(AssemblyInformationalVersion)' != '' ">
+      <PropertyGroup>
+        <Version>$(AssemblyVersionNumber)</Version>
+      </PropertyGroup>
+    </When>
+  </Choose>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.1" />
+    <PackageReference Include="Nice3point.Revit.Api.RevitAPI" Version="$(RevitVersion).*" />
+    <PackageReference Include="Nice3point.Revit.Api.RevitAPIUI" Version="$(RevitVersion).*" />
+    <PackageReference Include="MahApps.Metro" Version="3.0.0-alpha0457" />
+    <PackageReference Include="MahApps.Metro.IconPacks.Material" Version="4.11.0" />
+    <PackageReference Include="DynamoVisualProgramming.Core" Version="$(DynVersion).*">
+      <ExcludeAssets>runtime</ExcludeAssets>
+    </PackageReference>
+    <PackageReference Include="DynamoVisualProgramming.DynamoCoreNodes" Version="$(DynVersion).*">
+      <ExcludeAssets>runtime</ExcludeAssets>
+    </PackageReference>
+    <PackageReference Include="DynamoVisualProgramming.Revit" Version="$(DynVersion).*">
+      <ExcludeAssets>runtime</ExcludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AU2023DynamoToolkitExtension\AU2023DynamoToolkitExtension.csproj" />
+    <ProjectReference Include="..\AU2023DynamoToolkitFunctions\AU2023DynamoToolkitFunctions.csproj" />
+    <ProjectReference Include="..\AU2023DynamoToolkit\AU2023DynamoToolkit.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Documentation\" />
+    <Folder Include="Manifests\" />
+  </ItemGroup>
+
+  <!--Core Setup-->
+  <PropertyGroup Condition="$(Configuration.Contains('Debug Core'))">
+    <DynamoVersion>2.18</DynamoVersion>
+    <DynamoHost>Core</DynamoHost>
+    <DynamoOutput>2.18</DynamoOutput>
+    <RevitVersion>2024</RevitVersion>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineConstants>$(DefineConstants);CORE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="$(Configuration.Contains('Release Core'))">
+    <DynamoVersion>2.18</DynamoVersion>
+    <DynamoOutput>2.18</DynamoOutput>
+    <RevitVersion>2024</RevitVersion>
+    <DefineConstants>$(DefineConstants);CORE</DefineConstants>
+  </PropertyGroup>
+
+  <!--Revit 2021 Setup-->
+  <PropertyGroup Condition="$(Configuration.Contains('Debug R21'))">
+    <DynamoVersion>2.6</DynamoVersion>
+    <DynamoOutput>2.6</DynamoOutput>
+    <DynamoHost>Revit</DynamoHost>
+    <RevitVersion>2021</RevitVersion>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineConstants>$(DefineConstants);R21</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="$(Configuration.Contains('Release R21'))">
+    <DynamoVersion>2.6</DynamoVersion>
+    <DynamoOutput>2.6</DynamoOutput>
+    <RevitVersion>2021</RevitVersion>
+    <DynamoHost>Revit</DynamoHost>
+    <DefineConstants>$(DefineConstants);R21</DefineConstants>
+  </PropertyGroup>
+
+  <!--Revit 2022 Setup-->
+  <PropertyGroup Condition="$(Configuration.Contains('Debug R22'))">
+    <DynamoVersion>2.12</DynamoVersion>
+    <DynamoOutput>2.12</DynamoOutput>
+    <DynamoHost>Revit</DynamoHost>
+    <RevitVersion>2022</RevitVersion>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineConstants>$(DefineConstants);R22</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="$(Configuration.Contains('Release R22'))">
+    <DynamoVersion>2.12</DynamoVersion>
+    <DynamoOutput>2.12</DynamoOutput>
+    <DynamoHost>Revit</DynamoHost>
+    <RevitVersion>2022</RevitVersion>
+    <DefineConstants>$(DefineConstants);R22</DefineConstants>
+  </PropertyGroup>
+
+  <!--Revit 2023 Setup-->
+  <PropertyGroup Condition="$(Configuration.Contains('Debug R23'))">
+    <DynamoVersion>2.13</DynamoVersion>
+    <DynamoOutput>2.13</DynamoOutput>
+    <DynamoHost>Revit</DynamoHost>
+    <RevitVersion>2023</RevitVersion>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineConstants>$(DefineConstants);R23</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="$(Configuration.Contains('Release R23'))">
+    <DynamoVersion>2.13</DynamoVersion>
+    <DynamoOutput>2.13</DynamoOutput>
+    <DynamoHost>Revit</DynamoHost>
+    <RevitVersion>2023</RevitVersion>
+    <DefineConstants>$(DefineConstants);R23</DefineConstants>
+  </PropertyGroup>
+
+  <!--Revit 2023.1 Setup-->
+  <PropertyGroup Condition="$(Configuration.Contains('Debug R23.1'))">
+    <DynamoVersion>2.16</DynamoVersion>
+    <DynamoOutput>2.16</DynamoOutput>
+    <DynamoHost>Revit</DynamoHost>
+    <RevitVersion>2023</RevitVersion>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineConstants>$(DefineConstants);R23</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="$(Configuration.Contains('Release R23.1'))">
+    <DynamoVersion>2.16</DynamoVersion>
+    <DynamoOutput>2.16</DynamoOutput>
+    <DynamoHost>Revit</DynamoHost>
+    <RevitVersion>2023</RevitVersion>
+    <DefineConstants>$(DefineConstants);R23</DefineConstants>
+  </PropertyGroup>
+
+  <!--Revit 2024 Setup-->
+  <PropertyGroup Condition="$(Configuration.Contains('Debug R24'))">
+    <DynamoVersion>2.16</DynamoVersion>
+    <DynamoOutput>2.17</DynamoOutput>
+    <DynamoHost>Revit</DynamoHost>
+    <RevitVersion>2024</RevitVersion>
+    <DefineConstants>$(DefineConstants);R24</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="$(Configuration.Contains('Release R24'))">
+    <DynamoVersion>2.16</DynamoVersion>
+    <DynamoOutput>2.17</DynamoOutput>
+    <DynamoHost>Revit</DynamoHost>
+    <RevitVersion>2024</RevitVersion>
+    <DefineConstants>$(DefineConstants);R24</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\Program Files\Autodesk\Revit $(RevitVersion)\Revit.exe</StartProgram>
+    <StartArguments>/language ENG</StartArguments>
+  </PropertyGroup>
+
+  <!--Define Variables-->
+  <PropertyGroup>
+    <ProjectName>AU2023DynamoToolkit</ProjectName>
+    <DynVersion>$(DynamoVersion)</DynVersion>
+    <BuildOutput>$(DynamoOutput)</BuildOutput>
+    <PublishSingleFile>true</PublishSingleFile>
+    <PublishTrimmed>true</PublishTrimmed>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>dynamo</PackageTags>
+    <FolderPackages>$(Appdata)\Dynamo\Dynamo $(DynamoHost)\$(BuildOutput)\packages\$(ProjectName)\</FolderPackages>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <!--Clean the local directories-->
+  <Target Name="DeleteFiles" AfterTargets="Clean">
+    <RemoveDir Directories="bin\" />
+  </Target>
+
+  <!--Copy files for local testing-->
+  <Target Name="CopyFiles" AfterTargets="CoreBuild" Condition="'$(OS)' =='Windows_NT'">
+    <Message Text="Build Revit Version $(RevitVersion)" Importance="high" />
+
+    <PropertyGroup>
+      <DistFolder>$(ProjectDir)\..\distDyn\</DistFolder>
+      <PackageFolder>$(ProjectDir)\..\distDyn\$(BuildOutput)\packages\$(ProjectName)\</PackageFolder>
+      <BinFolder>$(PackageFolder)\bin\</BinFolder>
+      <ExtraFolder>$(PackageFolder)\extra\</ExtraFolder>
+      <DyfFolder>$(PackageFolder)\dyf\</DyfFolder>
+      <DocFolder>$(PackageFolder)\doc\</DocFolder>
+      <LocalDynRevitFolder>$(Appdata)\Dynamo\Dynamo Revit\</LocalDynRevitFolder>
+      <LocalDynCoreFolder>$(Appdata)\Dynamo\Dynamo Core\</LocalDynCoreFolder>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Configs Include="$(OutDir)*.config" />
+      <Dlls Include="$(OutDir)*.dll" />
+      <Pdbs Include="$(OutDir)*.pdb" />
+      <Xmls Include="$(ProjectDir)\Manifests\*.xml" />
+      <Pkg Include="$(ProjectDir)\Manifests\*.json" />
+      <ExtraFiles Include="$(ProjectDir)\ExtraFiles\**\*" />
+      <DyfFiles Include="$(ProjectDir)\DyfFiles\**\*" />
+      <DistFiles Include="$(DistFolder)\**\*" />
+      <DocFiles Include="$(ProjectDir)Documentation\**\*" />
+    </ItemGroup>
+
+    <Copy SourceFiles="@(Dlls)" DestinationFolder="$(BinFolder)" />
+    <Copy SourceFiles="@(Xmls)" DestinationFolder="$(BinFolder)" />
+    <Copy SourceFiles="@(Pkg)" DestinationFolder="$(PackageFolder)" />
+    <Copy SourceFiles="@(ExtraFiles)" DestinationFolder="$(ExtraFolder)" />
+    <Copy SourceFiles="@(DyfFiles)" DestinationFolder="$(DyfFolder)" />
+    <Copy SourceFiles="@(DocFiles)" DestinationFolder="$(DocFolder)" />
+    
+
+    <ItemGroup>
+      <DistFiles Include="$(DistFolder)\**\*.*" />
+    </ItemGroup>
+    <Copy SourceFiles="@(DistFiles)" DestinationFolder="$(LocalDynRevitFolder)\%(RecursiveDir)" />
+    <Copy SourceFiles="@(DistFiles)" DestinationFolder="$(LocalDynCoreFolder)\%(RecursiveDir)" />
+  </Target>
+
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="echo $(ProjectName) $(DynVersion) - Assembly version: $(Version)&#xD;&#xA;echo { &quot;license&quot;:&quot;MIT&quot;, &quot;file_hash&quot;:null, &quot;name&quot;:&quot;$(ProjectName)&quot;, &quot;version&quot;:&quot;$(Version)&quot;, &quot;description&quot;:&quot;The AU 2023 Dynamo Toolkit&quot;, &quot;group&quot;:&quot;&quot;, &quot;keywords&quot;:[ &quot;AECOM&quot;, &quot;AU2023&quot;], &quot;dependencies&quot;:[], &quot;contents&quot;:&quot;A library of dynamo nodes to support the AU2023 library of functionalities.&quot;, &quot;engine_version&quot;:&quot;2.12.1.8411&quot;, &quot;engine&quot;:&quot;dynamo&quot;, &quot;engine_metadata&quot;:&quot;&quot;, &quot;site_url&quot;:&quot;&quot;, &quot;repository_url&quot;:&quot;&quot;, &quot;contains_binaries&quot;:true,  &quot;node_libraries&quot;:[ &quot;$(ProjectName)UI,  Version=$(Version),  Culture=neutral,  PublicKeyToken=null&quot;, &quot;$(ProjectName)Extension,  Version=$(Version),  Culture=neutral,  PublicKeyToken=null&quot;, &quot;$(ProjectName), Version=$(Version), Culture=neutral, PublicKeyToken=null&quot;]} &gt; &quot;$(MSBuildProjectDirectory)\Manifests\pkg.json&#xD;&#xA;exit 0" />
+  </Target>
+
+</Project>

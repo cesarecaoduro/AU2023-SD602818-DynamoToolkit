@@ -1,0 +1,197 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Configurations>Debug R21;Debug R22;Debug R23;Debug R24;Release R21;Release R22;Release R23;Debug R23.1;Release R24;Release R23.1;Release Core;Debug Core</Configurations>
+    <Configurations>$(Configurations);Release Core;Release R21;Release R22;Release R23;Release R23.1;Release R24;</Configurations>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <Choose>
+    <When Condition="'$(AssemblyInformationalVersion)' == '' ">
+      <PropertyGroup>
+        <Version>0.0.0.0</Version>
+      </PropertyGroup>
+    </When>
+    <When Condition="'$(AssemblyInformationalVersion)' != '' ">
+      <PropertyGroup>
+        <Version>$(AssemblyVersionNumber)</Version>
+      </PropertyGroup>
+    </When>
+  </Choose>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Identity.Client" Version="4.55.0" />
+    <PackageReference Include="Microsoft.Identity.Client.Broker" Version="4.55.0" />
+    <PackageReference Include="Microsoft.Identity.Client.Extensions.Msal" Version="2.32.0" />
+    <PackageReference Include="Nice3point.Revit.Api.RevitAPI" Version="$(RevitVersion).*" />
+    <PackageReference Include="Nice3point.Revit.Api.RevitAPIUI" Version="$(RevitVersion).*" />
+    <PackageReference Include="DynamoVisualProgramming.WpfUILibrary" Version="$(DynVersion).*">
+      <ExcludeAssets>runtime</ExcludeAssets>
+    </PackageReference>
+    <PackageReference Include="DynamoVisualProgramming.DynamoServices" Version="$(DynVersion).*">
+      <ExcludeAssets>runtime</ExcludeAssets>
+    </PackageReference>
+    <PackageReference Include="DynamoVisualProgramming.Core" Version="$(DynVersion).*">
+      <ExcludeAssets>runtime</ExcludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AU2023DynamoToolkitToolbar\AU2023DynamoToolkitToolbar.csproj" />
+  </ItemGroup>
+
+  <!--Core Setup-->
+  <PropertyGroup Condition="$(Configuration.Contains('Debug Core'))">
+    <DynamoVersion>2.18</DynamoVersion>
+    <DynamoHost>Core</DynamoHost>
+    <DynamoOutput>2.18</DynamoOutput>
+    <RevitVersion>2024</RevitVersion>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineConstants>$(DefineConstants);CORE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="$(Configuration.Contains('Release Core'))">
+    <DynamoVersion>2.18</DynamoVersion>
+    <DynamoOutput>2.18</DynamoOutput>
+    <RevitVersion>2024</RevitVersion>
+    <DefineConstants>$(DefineConstants);CORE</DefineConstants>
+  </PropertyGroup>
+
+  <!--Revit 2021 Setup-->
+  <PropertyGroup Condition="$(Configuration.Contains('Debug R21'))">
+    <DynamoVersion>2.6</DynamoVersion>
+    <DynamoOutput>2.6</DynamoOutput>
+    <DynamoHost>Revit</DynamoHost>
+    <RevitVersion>2021</RevitVersion>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineConstants>$(DefineConstants);R21</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="$(Configuration.Contains('Release R21'))">
+    <DynamoVersion>2.6</DynamoVersion>
+    <DynamoOutput>2.6</DynamoOutput>
+    <RevitVersion>2021</RevitVersion>
+    <DynamoHost>Revit</DynamoHost>
+    <DefineConstants>$(DefineConstants);R21</DefineConstants>
+  </PropertyGroup>
+
+  <!--Revit 2022 Setup-->
+  <PropertyGroup Condition="$(Configuration.Contains('Debug R22'))">
+    <DynamoVersion>2.12</DynamoVersion>
+    <DynamoOutput>2.12</DynamoOutput>
+    <DynamoHost>Revit</DynamoHost>
+    <RevitVersion>2022</RevitVersion>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineConstants>$(DefineConstants);R22</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="$(Configuration.Contains('Release R22'))">
+    <DynamoVersion>2.12</DynamoVersion>
+    <DynamoOutput>2.12</DynamoOutput>
+    <DynamoHost>Revit</DynamoHost>
+    <RevitVersion>2022</RevitVersion>
+    <DefineConstants>$(DefineConstants);R22</DefineConstants>
+  </PropertyGroup>
+
+  <!--Revit 2023 Setup-->
+  <PropertyGroup Condition="$(Configuration.Contains('Debug R23'))">
+    <DynamoVersion>2.13</DynamoVersion>
+    <DynamoOutput>2.13</DynamoOutput>
+    <DynamoHost>Revit</DynamoHost>
+    <RevitVersion>2023</RevitVersion>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineConstants>$(DefineConstants);R23</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="$(Configuration.Contains('Release R23'))">
+    <DynamoVersion>2.13</DynamoVersion>
+    <DynamoOutput>2.13</DynamoOutput>
+    <DynamoHost>Revit</DynamoHost>
+    <RevitVersion>2023</RevitVersion>
+    <DefineConstants>$(DefineConstants);R23</DefineConstants>
+  </PropertyGroup>
+
+  <!--Revit 2023.1 Setup-->
+  <PropertyGroup Condition="$(Configuration.Contains('Debug R23.1'))">
+    <DynamoVersion>2.16</DynamoVersion>
+    <DynamoOutput>2.16</DynamoOutput>
+    <DynamoHost>Revit</DynamoHost>
+    <RevitVersion>2023</RevitVersion>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineConstants>$(DefineConstants);R23</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="$(Configuration.Contains('Release R23.1'))">
+    <DynamoVersion>2.16</DynamoVersion>
+    <DynamoOutput>2.16</DynamoOutput>
+    <DynamoHost>Revit</DynamoHost>
+    <RevitVersion>2023</RevitVersion>
+    <DefineConstants>$(DefineConstants);R23</DefineConstants>
+  </PropertyGroup>
+
+  <!--Revit 2024 Setup-->
+  <PropertyGroup Condition="$(Configuration.Contains('Debug R24'))">
+    <DynamoVersion>2.16</DynamoVersion>
+    <DynamoOutput>2.17</DynamoOutput>
+    <DynamoHost>Revit</DynamoHost>
+    <RevitVersion>2024</RevitVersion>
+    <DefineConstants>$(DefineConstants);R24</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="$(Configuration.Contains('Release R24'))">
+    <DynamoVersion>2.16</DynamoVersion>
+    <DynamoOutput>2.17</DynamoOutput>
+    <DynamoHost>Revit</DynamoHost>
+    <RevitVersion>2024</RevitVersion>
+    <DefineConstants>$(DefineConstants);R24</DefineConstants>
+  </PropertyGroup>
+  
+  <!--Define Variables-->
+  <PropertyGroup>
+    <ProjectName>AU2023DynamoToolkit</ProjectName>
+    <DynVersion>$(DynamoVersion)</DynVersion>
+    <BuildOutput>$(DynamoOutput)</BuildOutput>
+    <PublishSingleFile>true</PublishSingleFile>
+    <PublishTrimmed>true</PublishTrimmed>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>dynamo</PackageTags>
+    <FolderPackages>$(Appdata)\Dynamo\Dynamo $(DynamoHost)\$(BuildOutput)\packages\$(ProjectName)\</FolderPackages>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <!--Clean the local directories-->
+  <Target Name="DeleteFiles" AfterTargets="Clean">
+    <RemoveDir Directories="bin\" />
+  </Target>
+
+  <!--Copy files for local testing-->
+  <Target Name="CopyFiles" AfterTargets="CoreBuild" Condition="'$(OS)' =='Windows_NT'">
+    <Message Text="Build Revit Version $(RevitVersion)" Importance="high" />
+
+    <PropertyGroup>
+      <PackageFolder>$(ProjectDir)\..\distDyn\$(BuildOutput)\packages\$(ProjectName)\</PackageFolder>
+      <BinFolder>$(PackageFolder)\bin\</BinFolder>
+      <ExtraFolder>$(PackageFolder)\extra\</ExtraFolder>
+      <DyfFolder>$(PackageFolder)\dyf\</DyfFolder>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Configs Include="$(OutDir)*.config" />
+      <Dlls Include="$(OutDir)*.dll;$(TargetDir)/runtimes/win-x64/native/*.dll" />
+      <Pdbs Include="$(OutDir)*.pdb" />
+      <Xmls Include="$(ProjectDir)\Manifests\*.xml" />
+      <Pkg Include="$(ProjectDir)\Manifests\*.json" />
+      <ExampleFiles Include="$(ProjectDir)ExtraFiles\**\*" />
+      <DyfFiles Include="$(ProjectDir)DyfFiles\**\*" />
+    </ItemGroup>
+
+    <Copy SourceFiles="@(Dlls)" DestinationFolder="$(BinFolder)" />
+    <Copy SourceFiles="@(Xmls)" DestinationFolder="$(BinFolder)" />
+    <Copy SourceFiles="@(Pkg)" DestinationFolder="$(PackageFolder)" />
+    <Copy SourceFiles="@(ExampleFiles)" DestinationFolder="$(ExtraFolder)" />
+    <Copy SourceFiles="@(DyfFiles)" DestinationFolder="$(DyfFolder)" />
+
+  </Target>
+
+</Project>

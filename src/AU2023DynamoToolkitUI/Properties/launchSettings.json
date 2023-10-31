@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "AU2023DynamoToolkitUI": {
+      "commandName": "Project"
+    },
+    "Dynamo Core": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Dynamo\\DynamoCoreRuntime2.18.1\\DynamoSandbox.exe"
+    }
+  }
+}

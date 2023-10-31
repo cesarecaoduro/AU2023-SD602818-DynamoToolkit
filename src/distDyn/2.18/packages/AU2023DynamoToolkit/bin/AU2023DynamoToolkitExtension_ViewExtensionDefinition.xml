@@ -1,5 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ViewExtensionDefinition>
-  <AssemblyPath>..\bin\AU2023DynamoToolkitExtension.dll</AssemblyPath>
-  <TypeName>AU2023DynamoToolkitExtension.ViewExtension</TypeName>
-</ViewExtensionDefinition>

@@ -101,22 +101,6 @@
           }
         }
       },
-      "Nice3point.Revit.Api.RevitAPI/2023.1.1": {
-        "type": "package",
-        "compile": {
-          "ref/net48/RevitAPI.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Nice3point.Revit.Api.RevitAPIUI/2023.1.1": {
-        "type": "package",
-        "compile": {
-          "ref/net48/RevitAPIUI.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "NUnit/2.6.3": {
         "type": "package",
         "compile": {
@@ -350,36 +334,6 @@
         "tools/install.ps1"
       ]
     },
-    "Nice3point.Revit.Api.RevitAPI/2023.1.1": {
-      "sha512": "VAYOKJf11EawE1ttMyLDuemlkRBx2TCQFVM6+EYYcPO/3wbIqligTxPwWzpc70bfVtyPY58I+3h6Idnp2T2NmQ==",
-      "type": "package",
-      "path": "nice3point.revit.api.revitapi/2023.1.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "License.md",
-        "images/PackageIcon.png",
-        "nice3point.revit.api.revitapi.2023.1.1.nupkg.sha512",
-        "nice3point.revit.api.revitapi.nuspec",
-        "ref/net48/RevitAPI.dll",
-        "ref/net48/RevitAPI.xml"
-      ]
-    },
-    "Nice3point.Revit.Api.RevitAPIUI/2023.1.1": {
-      "sha512": "KHTUISsEfvrcDdpg36wJCezqP7B4uwH9R3mLOM0K9MBT+PNV5wLSnrhi5vuPHx8kcIQKoNdLbQljh16/hSJz/A==",
-      "type": "package",
-      "path": "nice3point.revit.api.revitapiui/2023.1.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "License.md",
-        "images/PackageIcon.png",
-        "nice3point.revit.api.revitapiui.2023.1.1.nupkg.sha512",
-        "nice3point.revit.api.revitapiui.nuspec",
-        "ref/net48/RevitAPIUI.dll",
-        "ref/net48/RevitAPIUI.xml"
-      ]
-    },
     "NUnit/2.6.3": {
       "sha512": "zGYW/N4U8H1Y6Xr6aGQZgaDtfpRJSlbx7A9Fg3WNUV3EKEUe1LwjnHw9NH81GVWYzKlOBLZmFp/q90YJwT2vzQ==",
       "type": "package",
@@ -584,9 +538,7 @@
     ".NETFramework,Version=v4.8": [
       "DynamoVisualProgramming.Core >= 2.16.*",
       "DynamoVisualProgramming.DynamoCoreNodes >= 2.16.*",
-      "DynamoVisualProgramming.Revit >= 2.16.*",
-      "Nice3point.Revit.Api.RevitAPI >= 2023.*",
-      "Nice3point.Revit.Api.RevitAPIUI >= 2023.*"
+      "DynamoVisualProgramming.Revit >= 2.16.*"
     ]
   },
   "packageFolders": {
@@ -594,7 +546,7 @@
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "0.0.0",
+    "version": "1.0.0",
     "restore": {
       "projectUniqueName": "C:\\Users\\caoduroc\\Documents\\GitHub\\AU2023DynamoToolkit\\src\\AU2023DynamoToolkit\\AU2023DynamoToolkit.csproj",
       "projectName": "AU2023DynamoToolkit",
@@ -648,14 +600,6 @@
             "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "target": "Package",
             "version": "[2.16.*, )"
-          },
-          "Nice3point.Revit.Api.RevitAPI": {
-            "target": "Package",
-            "version": "[2023.*, )"
-          },
-          "Nice3point.Revit.Api.RevitAPIUI": {
-            "target": "Package",
-            "version": "[2023.*, )"
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"

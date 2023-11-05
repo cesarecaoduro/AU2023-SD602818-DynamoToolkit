@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2ulH6pv3nIApg5suUsgl+mg7drYyQvUwdiiU2Aho8CrYMVT4Z8AQSiBZtZ8PChQpmyL2QqDXdNFBEEiYSOHJQw==",
+  "dgSpecHash": "zbIx1xdyjphLlkosD+1lR8DE5+fpWY4fDEdADTd5hLw+sPVOpoII/R7vXGe0qgs291Ua9+eHNlUC9d65X/VnFw==",
   "success": true,
   "projectFilePath": "C:\\Users\\caoduroc\\Documents\\GitHub\\AU2023DynamoToolkit\\src\\AU2023DynamoToolkitExtension\\AU2023DynamoToolkitExtension.csproj",
   "expectedPackageFiles": [
@@ -14,15 +14,8 @@
     "C:\\Users\\caoduroc\\.nuget\\packages\\mahapps.metro\\2.4.10\\mahapps.metro.2.4.10.nupkg.sha512",
     "C:\\Users\\caoduroc\\.nuget\\packages\\mahapps.metro.iconpacks.material\\4.11.0\\mahapps.metro.iconpacks.material.4.11.0.nupkg.sha512",
     "C:\\Users\\caoduroc\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
-    "C:\\Users\\caoduroc\\.nuget\\packages\\microsoft.identity.client\\4.55.0\\microsoft.identity.client.4.55.0.nupkg.sha512",
-    "C:\\Users\\caoduroc\\.nuget\\packages\\microsoft.identity.client.broker\\4.55.0\\microsoft.identity.client.broker.4.55.0.nupkg.sha512",
-    "C:\\Users\\caoduroc\\.nuget\\packages\\microsoft.identity.client.extensions.msal\\2.32.0\\microsoft.identity.client.extensions.msal.2.32.0.nupkg.sha512",
-    "C:\\Users\\caoduroc\\.nuget\\packages\\microsoft.identity.client.nativeinterop\\0.13.8\\microsoft.identity.client.nativeinterop.0.13.8.nupkg.sha512",
-    "C:\\Users\\caoduroc\\.nuget\\packages\\microsoft.identitymodel.abstractions\\6.22.0\\microsoft.identitymodel.abstractions.6.22.0.nupkg.sha512",
     "C:\\Users\\caoduroc\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.19\\microsoft.xaml.behaviors.wpf.1.1.19.nupkg.sha512",
     "C:\\Users\\caoduroc\\.nuget\\packages\\newtonsoft.json\\8.0.3\\newtonsoft.json.8.0.3.nupkg.sha512",
-    "C:\\Users\\caoduroc\\.nuget\\packages\\nice3point.revit.api.revitapi\\2023.1.1\\nice3point.revit.api.revitapi.2023.1.1.nupkg.sha512",
-    "C:\\Users\\caoduroc\\.nuget\\packages\\nice3point.revit.api.revitapiui\\2023.1.1\\nice3point.revit.api.revitapiui.2023.1.1.nupkg.sha512",
     "C:\\Users\\caoduroc\\.nuget\\packages\\nunit\\2.6.3\\nunit.2.6.3.nupkg.sha512",
     "C:\\Users\\caoduroc\\.nuget\\packages\\prism\\4.1.0\\prism.4.1.0.nupkg.sha512",
     "C:\\Users\\caoduroc\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",

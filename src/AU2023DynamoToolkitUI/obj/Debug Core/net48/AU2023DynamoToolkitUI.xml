@@ -4,46 +4,15 @@
         <name>AU2023DynamoToolkitUI</name>
     </assembly>
     <members>
-        <member name="T:AU2023DynamoToolkitUI.ViewModel.GreetingsUIViewModel">
-            <inheritdoc/>
-            <inheritdoc/>
-        </member>
-        <member name="P:AU2023DynamoToolkitUI.ViewModel.GreetingsUIViewModel.Name">
-            <inheritdoc cref="F:AU2023DynamoToolkitUI.ViewModel.GreetingsUIViewModel._name"/>
-        </member>
-        <member name="F:AU2023DynamoToolkitUI.ViewModel.GreetingsUIViewModel.openMessageDialogCommand">
-            <summary>The backing field for <see cref="P:AU2023DynamoToolkitUI.ViewModel.GreetingsUIViewModel.OpenMessageDialogCommand"/>.</summary>
-        </member>
-        <member name="P:AU2023DynamoToolkitUI.ViewModel.GreetingsUIViewModel.OpenMessageDialogCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:AU2023DynamoToolkitUI.ViewModel.GreetingsUIViewModel.OpenMessageDialog"/>.</summary>
-        </member>
-        <member name="T:AU2023DynamoToolkitUI.View.GreetingsUIView">
+        <member name="T:AU2023DynamoToolkitUI.View.GreetingsView">
             <summary>
-            GreetingsUIView
+            GreetingsView
             </summary>
         </member>
-        <member name="M:AU2023DynamoToolkitUI.View.GreetingsUIView.InitializeComponent">
+        <member name="M:AU2023DynamoToolkitUI.View.GreetingsView.InitializeComponent">
             <summary>
             InitializeComponent
             </summary>
-        </member>
-        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
-            <summary>
-            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
-            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
-            </summary>
-        </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Name">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Name" generated properties.</summary>
-        </member>
-        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
-            <summary>
-            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
-            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
-            </summary>
-        </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Name">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Name" generated properties.</summary>
         </member>
     </members>
 </doc>

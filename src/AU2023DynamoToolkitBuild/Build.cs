@@ -1,44 +1,91 @@
 using System;
 using System.Linq;
 using Nuke.Common;
-using Nuke.Common.CI;
-using Nuke.Common.Execution;
+using Nuke.Common.Git;
 using Nuke.Common.IO;
 using Nuke.Common.ProjectModel;
-using Nuke.Common.Tooling;
+using Serilog;
+using Nuke.Common.Tools.DotNet;
+using Nuke.Common.Tools.MSBuild;
+using Nuke.Common.Tools.PowerShell;
+using static Nuke.Common.Tools.DotNet.DotNetTasks;
+using System.IO.Compression;
 using Nuke.Common.Utilities.Collections;
-using static Nuke.Common.EnvironmentInfo;
-using static Nuke.Common.IO.FileSystemTasks;
-using static Nuke.Common.IO.PathConstruction;
 
-class Build : NukeBuild
+partial class Build : NukeBuild
 {
-    /// Support plugins are available for:
-    ///   - JetBrains ReSharper        https://nuke.build/resharper
-    ///   - JetBrains Rider            https://nuke.build/rider
-    ///   - Microsoft VisualStudio     https://nuke.build/visualstudio
-    ///   - Microsoft VSCode           https://nuke.build/vscode
+    [Parameter("The build version")] string Version;
+    [GitRepository] readonly GitRepository GitRepository;
+    [Solution(GenerateProjects = true)] Solution Solution;
 
-    public static int Main () => Execute<Build>(x => x.Compile);
+    readonly AbsolutePath ArtifactsDirectory = RootDirectory / "artifacts";
+    readonly AbsolutePath DynamoDistDirectory = RootDirectory / "src" / "distDyn";
 
-    [Parameter("Configuration to build - Default is 'Debug' (local) or 'Release' (server)")]
-    readonly Configuration Configuration = IsLocalBuild ? Configuration.Debug : Configuration.Release;
+    string DynAppName = "AU 2023 Dynamo Toolkit";
+    string DynAppShortName = "AU2023DynamoToolkit";
+
+    public static int Main () => Execute<Build>(x => x.Clean);
 
     Target Clean => _ => _
-        .Before(Restore)
+        .OnlyWhenStatic(() => IsLocalBuild)
         .Executes(() =>
         {
-        });
+            ArtifactsDirectory.CreateOrCleanDirectory();
+            DynamoDistDirectory.CreateOrCleanDirectory();
 
-    Target Restore => _ => _
-        .Executes(() =>
-        {
+            foreach (var project in Solution.AllProjects.Where(project => project != Solution.AU2023DynamoToolkitBuild))
+            {
+                var path = project.Directory / "bin";
+                Log.Information("Cleaning directory: {Directory}", path);
+                path.CreateOrCleanDirectory();
+            }
         });
 
     Target Compile => _ => _
-        .DependsOn(Restore)
+        .TriggeredBy(Clean)
         .Executes(() =>
         {
+            var configurations = SolutionConfigurations
+            .Where(s => s.Contains("Release R")).ToList();
+
+            //compile all the build
+            foreach (var configuration in configurations)
+            {
+                DotNetBuild(settings => settings
+                    .SetConfiguration(configuration)
+                    .SetProjectFile(Solution.AU2023DynamoToolkitUI)
+                    .SetVersion(Version)
+                    .SetVerbosity(DotNetVerbosity.Minimal));
+            }
         });
 
+    Target CreateArtifacts => _ => _
+        .TriggeredBy(Compile)
+        .OnlyWhenStatic(() => IsLocalBuild || GitRepository.IsOnMainBranch())
+        .Executes(() =>
+        {
+            Log.Information($"Creating Dynamo zip file...");
+            DynamoDistDirectory.ZipTo(ArtifactsDirectory / $"{DynAppShortName}-{Version}.zip",
+                compressionLevel: CompressionLevel.Optimal
+                );
+        });
+
+    Target CleanLocal => _ => _
+        .TriggeredBy(CreateArtifacts)
+        .OnlyWhenStatic(() => IsLocalBuild)
+        .Executes(() =>
+        {
+            Log.Information("Cleaning local Directories");
+
+            var dynamoLocalPath = ((AbsolutePath)Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)) /
+                    "Dynamo";
+
+            var versionDirs = dynamoLocalPath.GlobDirectories("**/2.*");
+
+            versionDirs.ForEach(dir =>
+            {
+                var packageFodler = dir / "packages" / DynAppShortName;
+                packageFodler.DeleteDirectory();
+            });
+        });
 }

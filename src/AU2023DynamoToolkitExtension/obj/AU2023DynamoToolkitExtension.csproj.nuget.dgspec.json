@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\Users\\caoduroc\\Documents\\GitHub\\AU2023DynamoToolkit\\src\\AU2023DynamoToolkitExtension\\AU2023DynamoToolkitExtension.csproj": {
-      "version": "0.0.0",
+      "version": "1.0.0",
       "restore": {
         "projectUniqueName": "C:\\Users\\caoduroc\\Documents\\GitHub\\AU2023DynamoToolkit\\src\\AU2023DynamoToolkitExtension\\AU2023DynamoToolkitExtension.csproj",
         "projectName": "AU2023DynamoToolkitExtension",
@@ -63,26 +63,6 @@
               "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "target": "Package",
               "version": "[2.16.*, )"
-            },
-            "Microsoft.Identity.Client": {
-              "target": "Package",
-              "version": "[4.55.0, )"
-            },
-            "Microsoft.Identity.Client.Broker": {
-              "target": "Package",
-              "version": "[4.55.0, )"
-            },
-            "Microsoft.Identity.Client.Extensions.Msal": {
-              "target": "Package",
-              "version": "[2.32.0, )"
-            },
-            "Nice3point.Revit.Api.RevitAPI": {
-              "target": "Package",
-              "version": "[2023.*, )"
-            },
-            "Nice3point.Revit.Api.RevitAPIUI": {
-              "target": "Package",
-              "version": "[2023.*, )"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
@@ -90,7 +70,7 @@
       }
     },
     "C:\\Users\\caoduroc\\Documents\\GitHub\\AU2023DynamoToolkit\\src\\AU2023DynamoToolkitToolbar\\AU2023DynamoToolkitToolbar.csproj": {
-      "version": "0.0.0",
+      "version": "1.0.0",
       "restore": {
         "projectUniqueName": "C:\\Users\\caoduroc\\Documents\\GitHub\\AU2023DynamoToolkit\\src\\AU2023DynamoToolkitToolbar\\AU2023DynamoToolkitToolbar.csproj",
         "projectName": "AU2023DynamoToolkitToolbar",

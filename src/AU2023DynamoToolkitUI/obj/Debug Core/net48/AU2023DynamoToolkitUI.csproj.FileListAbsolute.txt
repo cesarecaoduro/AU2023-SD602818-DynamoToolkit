@@ -25,8 +25,6 @@ C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitUI
 C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitUI\bin\Debug Core\net48\AU2023DynamoToolkitToolbar.pdb
 C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitUI\bin\Debug Core\net48\AU2023DynamoToolkitToolbar.xml
 C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitUI\obj\Debug Core\net48\AU2023DynamoToolkitUI.csproj.AssemblyReference.cache
-C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitUI\obj\Debug Core\net48\View\GreetingsUIView.baml
-C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitUI\obj\Debug Core\net48\View\GreetingsUIView.g.cs
 C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitUI\obj\Debug Core\net48\AU2023DynamoToolkitUI_MarkupCompile.cache
 C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitUI\obj\Debug Core\net48\AU2023DynamoToolkitUI.g.resources
 C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitUI\obj\Debug Core\net48\AU2023DynamoToolkitUI.GeneratedMSBuildEditorConfig.editorconfig
@@ -37,14 +35,8 @@ C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitUI
 C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitUI\obj\Debug Core\net48\AU2023DynamoToolkitUI.dll
 C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitUI\obj\Debug Core\net48\AU2023DynamoToolkitUI.xml
 C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitUI\obj\Debug Core\net48\AU2023DynamoToolkitUI.pdb
-C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitUI\bin\Debug Core\net48\runtimes\win-arm64\native\msalruntime_arm64.dll
-C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitUI\bin\Debug Core\net48\runtimes\win-x64\native\msalruntime.dll
-C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitUI\bin\Debug Core\net48\runtimes\win-x86\native\msalruntime_x86.dll
-C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitUI\bin\Debug Core\net48\Microsoft.Identity.Client.dll
-C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitUI\bin\Debug Core\net48\Microsoft.Identity.Client.Broker.dll
-C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitUI\bin\Debug Core\net48\Microsoft.Identity.Client.Extensions.Msal.dll
-C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitUI\bin\Debug Core\net48\Microsoft.Identity.Client.NativeInterop.dll
-C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitUI\bin\Debug Core\net48\Microsoft.IdentityModel.Abstractions.dll
 C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitUI\bin\Debug Core\net48\AU2023DynamoToolkitFunctions.dll
 C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitUI\bin\Debug Core\net48\AU2023DynamoToolkitFunctions.pdb
 C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitUI\bin\Debug Core\net48\AU2023DynamoToolkitFunctions.xml
+C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitUI\obj\Debug Core\net48\View\GreetingsView.baml
+C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitUI\obj\Debug Core\net48\View\GreetingsView.g.cs

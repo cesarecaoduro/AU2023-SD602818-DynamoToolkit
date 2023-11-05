@@ -19,14 +19,6 @@ C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitEx
 C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitExtension\obj\Debug Core\net48\AU2023DynamoToolkitExtension.dll
 C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitExtension\obj\Debug Core\net48\AU2023DynamoToolkitExtension.xml
 C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitExtension\obj\Debug Core\net48\AU2023DynamoToolkitExtension.pdb
-C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitExtension\bin\Debug Core\net48\runtimes\win-arm64\native\msalruntime_arm64.dll
-C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitExtension\bin\Debug Core\net48\runtimes\win-x64\native\msalruntime.dll
-C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitExtension\bin\Debug Core\net48\runtimes\win-x86\native\msalruntime_x86.dll
-C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitExtension\bin\Debug Core\net48\Microsoft.Identity.Client.dll
-C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitExtension\bin\Debug Core\net48\Microsoft.Identity.Client.Broker.dll
-C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitExtension\bin\Debug Core\net48\Microsoft.Identity.Client.Extensions.Msal.dll
-C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitExtension\bin\Debug Core\net48\Microsoft.Identity.Client.NativeInterop.dll
-C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitExtension\bin\Debug Core\net48\Microsoft.IdentityModel.Abstractions.dll
 C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitExtension\bin\Debug Core\net48\CommunityToolkit.Mvvm.dll
 C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitExtension\bin\Debug Core\net48\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\caoduroc\Documents\GitHub\AU2023DynamoToolkit\src\AU2023DynamoToolkitExtension\bin\Debug Core\net48\System.Buffers.dll

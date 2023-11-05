@@ -13,12 +13,12 @@ public static class Greetings
     /// </summary>
     /// <param name="name">The name.</param>
     /// <returns>The message that says hello.</returns>
-    [MultiReturn("message")]
-    public static Dictionary<string, object> SayHello(string name)
+    [MultiReturn("output")]
+    public static Dictionary<string, object> SayHello(string input)
     {
         return new Dictionary<string, object>()
         {
-            {"message", $"Hello, {name}" },
+            {"output", $"Hello, {input}" },
         };
     }
 }

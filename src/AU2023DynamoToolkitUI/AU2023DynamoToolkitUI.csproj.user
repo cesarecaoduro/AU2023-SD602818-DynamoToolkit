@@ -6,13 +6,16 @@
   <PropertyGroup>
     <ActiveDebugProfile>Dynamo Core</ActiveDebugProfile>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug R23.1|AnyCPU'">
+    <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
+  </PropertyGroup>
   <ItemGroup>
-    <Compile Update="View\GreetingsUIView.xaml.cs">
+    <Compile Update="View\GreetingsView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="View\GreetingsUIView.xaml">
+    <Page Update="View\GreetingsView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

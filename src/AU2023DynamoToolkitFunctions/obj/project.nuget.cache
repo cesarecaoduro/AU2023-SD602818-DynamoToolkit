@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "su80Vq/SQNiIbaOqDTqLlJjAbWiMx5zJbuL3DZtXs0ASi4Ur2w1FOxqES7G13O3/0d2nZQdMgG+uz39MEARyfA==",
+  "dgSpecHash": "s0Cbu5pQy0cAUL/5pCTsPTRdRx88IgyrXbXBLGldm2cmcg7/d8G6K0f6g+IIDTVTrO+WpSYQPI3JyDh+Czd+lg==",
   "success": true,
   "projectFilePath": "C:\\Users\\caoduroc\\Documents\\GitHub\\AU2023DynamoToolkit\\src\\AU2023DynamoToolkitFunctions\\AU2023DynamoToolkitFunctions.csproj",
   "expectedPackageFiles": [
@@ -10,8 +10,6 @@
     "C:\\Users\\caoduroc\\.nuget\\packages\\dynamovisualprogramming.dynamoservices\\2.16.2.5624\\dynamovisualprogramming.dynamoservices.2.16.2.5624.nupkg.sha512",
     "C:\\Users\\caoduroc\\.nuget\\packages\\dynamovisualprogramming.zerotouchlibrary\\2.16.2.5624\\dynamovisualprogramming.zerotouchlibrary.2.16.2.5624.nupkg.sha512",
     "C:\\Users\\caoduroc\\.nuget\\packages\\newtonsoft.json\\8.0.3\\newtonsoft.json.8.0.3.nupkg.sha512",
-    "C:\\Users\\caoduroc\\.nuget\\packages\\nice3point.revit.api.revitapi\\2023.1.1\\nice3point.revit.api.revitapi.2023.1.1.nupkg.sha512",
-    "C:\\Users\\caoduroc\\.nuget\\packages\\nice3point.revit.api.revitapiui\\2023.1.1\\nice3point.revit.api.revitapiui.2023.1.1.nupkg.sha512",
     "C:\\Users\\caoduroc\\.nuget\\packages\\nunit\\2.6.3\\nunit.2.6.3.nupkg.sha512",
     "C:\\Users\\caoduroc\\.nuget\\packages\\prism\\4.1.0\\prism.4.1.0.nupkg.sha512",
     "C:\\Users\\caoduroc\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",

@@ -180,113 +180,6 @@
           "buildTransitive/net462/_._": {}
         }
       },
-      "Microsoft.Identity.Client/4.55.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.IdentityModel.Abstractions": "6.22.0"
-        },
-        "frameworkAssemblies": [
-          "Microsoft.CSharp",
-          "System",
-          "System.Core",
-          "System.Data",
-          "System.Data.DataSetExtensions",
-          "System.Drawing",
-          "System.IdentityModel",
-          "System.Net.Http",
-          "System.Windows.Forms",
-          "System.Xml",
-          "System.Xml.Linq"
-        ],
-        "compile": {
-          "lib/net461/Microsoft.Identity.Client.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net461/Microsoft.Identity.Client.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.Identity.Client.Broker/4.55.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Identity.Client": "4.55.0",
-          "Microsoft.Identity.Client.NativeInterop": "0.13.8"
-        },
-        "frameworkAssemblies": [
-          "System.Net.Http"
-        ],
-        "compile": {
-          "lib/net461/Microsoft.Identity.Client.Broker.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net461/Microsoft.Identity.Client.Broker.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.Identity.Client.Extensions.Msal/2.32.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Identity.Client": "4.55.0"
-        },
-        "frameworkAssemblies": [
-          "System.Security"
-        ],
-        "compile": {
-          "lib/net45/Microsoft.Identity.Client.Extensions.Msal.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net45/Microsoft.Identity.Client.Extensions.Msal.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.Identity.Client.NativeInterop/0.13.8": {
-        "type": "package",
-        "compile": {
-          "lib/net461/Microsoft.Identity.Client.NativeInterop.dll": {}
-        },
-        "runtime": {
-          "lib/net461/Microsoft.Identity.Client.NativeInterop.dll": {}
-        },
-        "build": {
-          "buildtransitive/net461/Microsoft.Identity.Client.NativeInterop.targets": {}
-        },
-        "runtimeTargets": {
-          "runtimes/win-arm64/native/msalruntime_arm64.dll": {
-            "assetType": "native",
-            "rid": "win-arm64"
-          },
-          "runtimes/win-x64/native/msalruntime.dll": {
-            "assetType": "native",
-            "rid": "win-x64"
-          },
-          "runtimes/win-x86/native/msalruntime_x86.dll": {
-            "assetType": "native",
-            "rid": "win-x86"
-          }
-        }
-      },
-      "Microsoft.IdentityModel.Abstractions/6.22.0": {
-        "type": "package",
-        "compile": {
-          "lib/net472/Microsoft.IdentityModel.Abstractions.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net472/Microsoft.IdentityModel.Abstractions.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "Microsoft.Xaml.Behaviors.Wpf/1.1.19": {
         "type": "package",
         "frameworkAssemblies": [
@@ -318,22 +211,6 @@
         },
         "runtime": {
           "lib/net45/_._": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Nice3point.Revit.Api.RevitAPI/2023.1.1": {
-        "type": "package",
-        "compile": {
-          "ref/net48/RevitAPI.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Nice3point.Revit.Api.RevitAPIUI/2023.1.1": {
-        "type": "package",
-        "compile": {
-          "ref/net48/RevitAPIUI.dll": {
             "related": ".xml"
           }
         }
@@ -487,7 +364,7 @@
           }
         }
       },
-      "AU2023DynamoToolkitToolbar/0.0.0": {
+      "AU2023DynamoToolkitToolbar/1.0.0": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.8",
         "dependencies": {
@@ -758,113 +635,6 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Identity.Client/4.55.0": {
-      "sha512": "yjX1mbDvQ0Q1Zfa3REcv21B8Tz8RHTw6yYdDfV282VJwBbQE9CeLEurVbeR6DwjMIq4+/Gegp6Ll82zaWisCwg==",
-      "type": "package",
-      "path": "microsoft.identity.client/4.55.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/monoandroid10.0/Microsoft.Identity.Client.dll",
-        "lib/monoandroid10.0/Microsoft.Identity.Client.xml",
-        "lib/monoandroid90/Microsoft.Identity.Client.dll",
-        "lib/monoandroid90/Microsoft.Identity.Client.xml",
-        "lib/net45/Microsoft.Identity.Client.dll",
-        "lib/net45/Microsoft.Identity.Client.xml",
-        "lib/net461/Microsoft.Identity.Client.dll",
-        "lib/net461/Microsoft.Identity.Client.xml",
-        "lib/net6.0-android31.0/Microsoft.Identity.Client.dll",
-        "lib/net6.0-android31.0/Microsoft.Identity.Client.xml",
-        "lib/net6.0-ios15.4/Microsoft.Identity.Client.dll",
-        "lib/net6.0-ios15.4/Microsoft.Identity.Client.xml",
-        "lib/net6.0-windows7.0/Microsoft.Identity.Client.dll",
-        "lib/net6.0-windows7.0/Microsoft.Identity.Client.xml",
-        "lib/net6.0/Microsoft.Identity.Client.dll",
-        "lib/net6.0/Microsoft.Identity.Client.xml",
-        "lib/netcoreapp2.1/Microsoft.Identity.Client.dll",
-        "lib/netcoreapp2.1/Microsoft.Identity.Client.xml",
-        "lib/netstandard2.0/Microsoft.Identity.Client.dll",
-        "lib/netstandard2.0/Microsoft.Identity.Client.xml",
-        "lib/uap10.0.17763/Microsoft.Identity.Client.dll",
-        "lib/uap10.0.17763/Microsoft.Identity.Client.pri",
-        "lib/uap10.0.17763/Microsoft.Identity.Client.xml",
-        "lib/xamarinios10/Microsoft.Identity.Client.dll",
-        "lib/xamarinios10/Microsoft.Identity.Client.xml",
-        "microsoft.identity.client.4.55.0.nupkg.sha512",
-        "microsoft.identity.client.nuspec"
-      ]
-    },
-    "Microsoft.Identity.Client.Broker/4.55.0": {
-      "sha512": "VW63P7tQEcPHV4KFJfOYnJHOJ2UPDLGSeuKZv5FXO4SYpICWILLMY7Zn3oIaVQ6FfcYyjWNd2I0rPuYA7gf7lw==",
-      "type": "package",
-      "path": "microsoft.identity.client.broker/4.55.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net461/Microsoft.Identity.Client.Broker.dll",
-        "lib/net461/Microsoft.Identity.Client.Broker.xml",
-        "lib/netstandard2.0/Microsoft.Identity.Client.Broker.dll",
-        "lib/netstandard2.0/Microsoft.Identity.Client.Broker.xml",
-        "microsoft.identity.client.broker.4.55.0.nupkg.sha512",
-        "microsoft.identity.client.broker.nuspec"
-      ]
-    },
-    "Microsoft.Identity.Client.Extensions.Msal/2.32.0": {
-      "sha512": "xphyX6xhFtH3u2H617okj0CFBPoojNtwFM/jbsl8DPJhuTMsOlKOtBVDPhZaL0K25XfOxqLwZfKd6zcfC/k+UA==",
-      "type": "package",
-      "path": "microsoft.identity.client.extensions.msal/2.32.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net45/Microsoft.Identity.Client.Extensions.Msal.dll",
-        "lib/net45/Microsoft.Identity.Client.Extensions.Msal.xml",
-        "lib/netcoreapp3.1/Microsoft.Identity.Client.Extensions.Msal.dll",
-        "lib/netcoreapp3.1/Microsoft.Identity.Client.Extensions.Msal.xml",
-        "lib/netstandard2.0/Microsoft.Identity.Client.Extensions.Msal.dll",
-        "lib/netstandard2.0/Microsoft.Identity.Client.Extensions.Msal.xml",
-        "microsoft.identity.client.extensions.msal.2.32.0.nupkg.sha512",
-        "microsoft.identity.client.extensions.msal.nuspec"
-      ]
-    },
-    "Microsoft.Identity.Client.NativeInterop/0.13.8": {
-      "sha512": "eccVwaDOan12YJrh6ntIBIXeKTNoWz+af2/c13lhvrDoX0ydVXitCXMJVz0dh2eJK5y2KJ7IfkEvNilB/A9V7A==",
-      "type": "package",
-      "path": "microsoft.identity.client.nativeinterop/0.13.8",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "build/net461/Microsoft.Identity.Client.NativeInterop.props",
-        "buildtransitive/net461/Microsoft.Identity.Client.NativeInterop.targets",
-        "lib/net461/Microsoft.Identity.Client.NativeInterop.dll",
-        "lib/netstandard2.0/Microsoft.Identity.Client.NativeInterop.dll",
-        "microsoft.identity.client.nativeinterop.0.13.8.nupkg.sha512",
-        "microsoft.identity.client.nativeinterop.nuspec",
-        "runtimes/win-arm64/native/msalruntime_arm64.dll",
-        "runtimes/win-x64/native/msalruntime.dll",
-        "runtimes/win-x86/native/msalruntime_x86.dll"
-      ]
-    },
-    "Microsoft.IdentityModel.Abstractions/6.22.0": {
-      "sha512": "iI+9V+2ciCrbheeLjpmjcqCnhy+r6yCoEcid3nkoFWerHgjVuT6CPM4HODUTtUPe1uwks4wcnAujJ8u+IKogHQ==",
-      "type": "package",
-      "path": "microsoft.identitymodel.abstractions/6.22.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net45/Microsoft.IdentityModel.Abstractions.dll",
-        "lib/net45/Microsoft.IdentityModel.Abstractions.xml",
-        "lib/net461/Microsoft.IdentityModel.Abstractions.dll",
-        "lib/net461/Microsoft.IdentityModel.Abstractions.xml",
-        "lib/net472/Microsoft.IdentityModel.Abstractions.dll",
-        "lib/net472/Microsoft.IdentityModel.Abstractions.xml",
-        "lib/net6.0/Microsoft.IdentityModel.Abstractions.dll",
-        "lib/net6.0/Microsoft.IdentityModel.Abstractions.xml",
-        "lib/netstandard2.0/Microsoft.IdentityModel.Abstractions.dll",
-        "lib/netstandard2.0/Microsoft.IdentityModel.Abstractions.xml",
-        "microsoft.identitymodel.abstractions.6.22.0.nupkg.sha512",
-        "microsoft.identitymodel.abstractions.nuspec"
-      ]
-    },
     "Microsoft.Xaml.Behaviors.Wpf/1.1.19": {
       "sha512": "5sPWkbqImc2t1aQwIfJcKsUo7tOg1Tr8+6xVzZJB56Nzt4u9NlpcLofgdX/aRYpPKdWDA3U23Akw1KQzU5e82g==",
       "type": "package",
@@ -909,36 +679,6 @@
         "newtonsoft.json.8.0.3.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "tools/install.ps1"
-      ]
-    },
-    "Nice3point.Revit.Api.RevitAPI/2023.1.1": {
-      "sha512": "VAYOKJf11EawE1ttMyLDuemlkRBx2TCQFVM6+EYYcPO/3wbIqligTxPwWzpc70bfVtyPY58I+3h6Idnp2T2NmQ==",
-      "type": "package",
-      "path": "nice3point.revit.api.revitapi/2023.1.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "License.md",
-        "images/PackageIcon.png",
-        "nice3point.revit.api.revitapi.2023.1.1.nupkg.sha512",
-        "nice3point.revit.api.revitapi.nuspec",
-        "ref/net48/RevitAPI.dll",
-        "ref/net48/RevitAPI.xml"
-      ]
-    },
-    "Nice3point.Revit.Api.RevitAPIUI/2023.1.1": {
-      "sha512": "KHTUISsEfvrcDdpg36wJCezqP7B4uwH9R3mLOM0K9MBT+PNV5wLSnrhi5vuPHx8kcIQKoNdLbQljh16/hSJz/A==",
-      "type": "package",
-      "path": "nice3point.revit.api.revitapiui/2023.1.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "License.md",
-        "images/PackageIcon.png",
-        "nice3point.revit.api.revitapiui.2023.1.1.nupkg.sha512",
-        "nice3point.revit.api.revitapiui.nuspec",
-        "ref/net48/RevitAPIUI.dll",
-        "ref/net48/RevitAPIUI.xml"
       ]
     },
     "NUnit/2.6.3": {
@@ -1263,7 +1003,7 @@
         "version.txt"
       ]
     },
-    "AU2023DynamoToolkitToolbar/0.0.0": {
+    "AU2023DynamoToolkitToolbar/1.0.0": {
       "type": "project",
       "path": "../AU2023DynamoToolkitToolbar/AU2023DynamoToolkitToolbar.csproj",
       "msbuildProject": "../AU2023DynamoToolkitToolbar/AU2023DynamoToolkitToolbar.csproj"
@@ -1271,15 +1011,10 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.8": [
-      "AU2023DynamoToolkitToolbar >= 0.0.0",
+      "AU2023DynamoToolkitToolbar >= 1.0.0",
       "DynamoVisualProgramming.Core >= 2.16.*",
       "DynamoVisualProgramming.DynamoServices >= 2.16.*",
-      "DynamoVisualProgramming.WpfUILibrary >= 2.16.*",
-      "Microsoft.Identity.Client >= 4.55.0",
-      "Microsoft.Identity.Client.Broker >= 4.55.0",
-      "Microsoft.Identity.Client.Extensions.Msal >= 2.32.0",
-      "Nice3point.Revit.Api.RevitAPI >= 2023.*",
-      "Nice3point.Revit.Api.RevitAPIUI >= 2023.*"
+      "DynamoVisualProgramming.WpfUILibrary >= 2.16.*"
     ]
   },
   "packageFolders": {
@@ -1287,7 +1022,7 @@
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "0.0.0",
+    "version": "1.0.0",
     "restore": {
       "projectUniqueName": "C:\\Users\\caoduroc\\Documents\\GitHub\\AU2023DynamoToolkit\\src\\AU2023DynamoToolkitExtension\\AU2023DynamoToolkitExtension.csproj",
       "projectName": "AU2023DynamoToolkitExtension",
@@ -1345,26 +1080,6 @@
             "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "target": "Package",
             "version": "[2.16.*, )"
-          },
-          "Microsoft.Identity.Client": {
-            "target": "Package",
-            "version": "[4.55.0, )"
-          },
-          "Microsoft.Identity.Client.Broker": {
-            "target": "Package",
-            "version": "[4.55.0, )"
-          },
-          "Microsoft.Identity.Client.Extensions.Msal": {
-            "target": "Package",
-            "version": "[2.32.0, )"
-          },
-          "Nice3point.Revit.Api.RevitAPI": {
-            "target": "Package",
-            "version": "[2023.*, )"
-          },
-          "Nice3point.Revit.Api.RevitAPIUI": {
-            "target": "Package",
-            "version": "[2023.*, )"
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"

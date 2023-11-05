@@ -15,7 +15,6 @@ using Nuke.Common.Utilities.Collections;
 partial class Build : NukeBuild
 {
     [Parameter("The build version")] string Version;
-    [GitRepository] readonly GitRepository GitRepository;
     [Solution(GenerateProjects = true)] Solution Solution;
 
     readonly AbsolutePath ArtifactsDirectory = RootDirectory / "artifacts";
@@ -88,4 +87,5 @@ partial class Build : NukeBuild
                 packageFodler.DeleteDirectory();
             });
         });
+
 }

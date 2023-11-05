@@ -364,7 +364,7 @@
           }
         }
       },
-      "AU2023DynamoToolkitToolbar/1.0.0": {
+      "AU2023DynamoToolkitToolbar/0.0.0": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.8",
         "dependencies": {
@@ -1003,7 +1003,7 @@
         "version.txt"
       ]
     },
-    "AU2023DynamoToolkitToolbar/1.0.0": {
+    "AU2023DynamoToolkitToolbar/0.0.0": {
       "type": "project",
       "path": "../AU2023DynamoToolkitToolbar/AU2023DynamoToolkitToolbar.csproj",
       "msbuildProject": "../AU2023DynamoToolkitToolbar/AU2023DynamoToolkitToolbar.csproj"
@@ -1011,7 +1011,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.8": [
-      "AU2023DynamoToolkitToolbar >= 1.0.0",
+      "AU2023DynamoToolkitToolbar >= 0.0.0",
       "DynamoVisualProgramming.Core >= 2.16.*",
       "DynamoVisualProgramming.DynamoServices >= 2.16.*",
       "DynamoVisualProgramming.WpfUILibrary >= 2.16.*"
@@ -1022,7 +1022,7 @@
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "1.0.0",
+    "version": "0.0.0",
     "restore": {
       "projectUniqueName": "C:\\Users\\caoduroc\\Documents\\GitHub\\AU2023DynamoToolkit\\src\\AU2023DynamoToolkitExtension\\AU2023DynamoToolkitExtension.csproj",
       "projectName": "AU2023DynamoToolkitExtension",

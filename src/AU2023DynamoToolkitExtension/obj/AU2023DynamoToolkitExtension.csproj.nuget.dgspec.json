@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\Users\\caoduroc\\Documents\\GitHub\\AU2023DynamoToolkit\\src\\AU2023DynamoToolkitExtension\\AU2023DynamoToolkitExtension.csproj": {
-      "version": "1.0.0",
+      "version": "0.0.0",
       "restore": {
         "projectUniqueName": "C:\\Users\\caoduroc\\Documents\\GitHub\\AU2023DynamoToolkit\\src\\AU2023DynamoToolkitExtension\\AU2023DynamoToolkitExtension.csproj",
         "projectName": "AU2023DynamoToolkitExtension",
@@ -70,7 +70,7 @@
       }
     },
     "C:\\Users\\caoduroc\\Documents\\GitHub\\AU2023DynamoToolkit\\src\\AU2023DynamoToolkitToolbar\\AU2023DynamoToolkitToolbar.csproj": {
-      "version": "1.0.0",
+      "version": "0.0.0",
       "restore": {
         "projectUniqueName": "C:\\Users\\caoduroc\\Documents\\GitHub\\AU2023DynamoToolkit\\src\\AU2023DynamoToolkitToolbar\\AU2023DynamoToolkitToolbar.csproj",
         "projectName": "AU2023DynamoToolkitToolbar",

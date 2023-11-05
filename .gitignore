@@ -400,3 +400,5 @@ FodyWeavers.xsd
 src/AU2023DynamoToolkit/obj/Debug/net48/
 
 *.cache
+
+src/AU2023DynamoToolkit/obj/

@@ -393,12 +393,7 @@
       },
       "AU2023DynamoToolkit/1.0.0": {
         "type": "project",
-        "framework": ".NETFramework,Version=v4.8",
-        "dependencies": {
-          "DynamoVisualProgramming.Core": "2.16.0",
-          "DynamoVisualProgramming.DynamoCoreNodes": "2.16.0",
-          "DynamoVisualProgramming.Revit": "2.16.0"
-        },
+        "framework": "Unsupported,Version=v0.0",
         "compile": {
           "bin/placeholder/AU2023DynamoToolkit.dll": {}
         },
@@ -406,11 +401,11 @@
           "bin/placeholder/AU2023DynamoToolkit.dll": {}
         }
       },
-      "AU2023DynamoToolkitExtension/1.0.0": {
+      "AU2023DynamoToolkitExtension/0.0.0": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.8",
         "dependencies": {
-          "AU2023DynamoToolkitToolbar": "1.0.0",
+          "AU2023DynamoToolkitToolbar": "0.0.0",
           "DynamoVisualProgramming.Core": "2.16.0",
           "DynamoVisualProgramming.DynamoServices": "2.16.0",
           "DynamoVisualProgramming.WpfUILibrary": "2.16.0"
@@ -422,7 +417,7 @@
           "bin/placeholder/AU2023DynamoToolkitExtension.dll": {}
         }
       },
-      "AU2023DynamoToolkitFunctions/1.0.0": {
+      "AU2023DynamoToolkitFunctions/0.0.0": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.8",
         "dependencies": {
@@ -436,7 +431,7 @@
           "bin/placeholder/AU2023DynamoToolkitFunctions.dll": {}
         }
       },
-      "AU2023DynamoToolkitToolbar/1.0.0": {
+      "AU2023DynamoToolkitToolbar/0.0.0": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.8",
         "dependencies": {
@@ -1117,17 +1112,17 @@
       "path": "../AU2023DynamoToolkit/AU2023DynamoToolkit.csproj",
       "msbuildProject": "../AU2023DynamoToolkit/AU2023DynamoToolkit.csproj"
     },
-    "AU2023DynamoToolkitExtension/1.0.0": {
+    "AU2023DynamoToolkitExtension/0.0.0": {
       "type": "project",
       "path": "../AU2023DynamoToolkitExtension/AU2023DynamoToolkitExtension.csproj",
       "msbuildProject": "../AU2023DynamoToolkitExtension/AU2023DynamoToolkitExtension.csproj"
     },
-    "AU2023DynamoToolkitFunctions/1.0.0": {
+    "AU2023DynamoToolkitFunctions/0.0.0": {
       "type": "project",
       "path": "../AU2023DynamoToolkitFunctions/AU2023DynamoToolkitFunctions.csproj",
       "msbuildProject": "../AU2023DynamoToolkitFunctions/AU2023DynamoToolkitFunctions.csproj"
     },
-    "AU2023DynamoToolkitToolbar/1.0.0": {
+    "AU2023DynamoToolkitToolbar/0.0.0": {
       "type": "project",
       "path": "../AU2023DynamoToolkitToolbar/AU2023DynamoToolkitToolbar.csproj",
       "msbuildProject": "../AU2023DynamoToolkitToolbar/AU2023DynamoToolkitToolbar.csproj"
@@ -1136,8 +1131,8 @@
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.8": [
       "AU2023DynamoToolkit >= 1.0.0",
-      "AU2023DynamoToolkitExtension >= 1.0.0",
-      "AU2023DynamoToolkitFunctions >= 1.0.0",
+      "AU2023DynamoToolkitExtension >= 0.0.0",
+      "AU2023DynamoToolkitFunctions >= 0.0.0",
       "CommunityToolkit.Mvvm >= 8.2.1",
       "DynamoVisualProgramming.Core >= 2.16.*",
       "DynamoVisualProgramming.DynamoCoreNodes >= 2.16.*",
@@ -1149,7 +1144,7 @@
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "1.0.0",
+    "version": "0.0.0",
     "restore": {
       "projectUniqueName": "C:\\Users\\caoduroc\\Documents\\GitHub\\AU2023DynamoToolkit\\src\\AU2023DynamoToolkitUI\\AU2023DynamoToolkitUI.csproj",
       "projectName": "AU2023DynamoToolkitUI",
@@ -1222,5 +1217,16 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project AU2023DynamoToolkit is not compatible with net48 (.NETFramework,Version=v4.8). Project AU2023DynamoToolkit does not support any target frameworks.",
+      "libraryId": "AU2023DynamoToolkit",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.8"
+      ]
+    }
+  ]
 }

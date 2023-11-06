@@ -35,12 +35,6 @@ public class Menu
         _viewLoadedParams = viewLoadedParams;
         MenuItem au2023Menu = new MenuItem { Header = "AU2023" };
 
-        //var accountName = Configurations.AuthenticationResult != null 
-        //    ? Configurations.AuthenticationResult?.Account.Username 
-        //    : _accountName;
-
-        //var account = new MenuItem { Header = $"Welcome {accountName}" };
-
         var documentation = new MenuItem { Header = "AU2023 Handsout" };
         documentation.Click += new RoutedEventHandler(DirectoryHandler.Handsout);
 

@@ -21,4 +21,13 @@ public static class Greetings
             {"output", $"Hello, {input}!" },
         };
     }
+
+    [MultiReturn("output")]
+    public static Dictionary<string, object> NewHello(string input)
+    {
+        return new Dictionary<string, object>()
+        {
+            {"output", $"Hello, {input}! with a PR!" },
+        };
+    }
 }

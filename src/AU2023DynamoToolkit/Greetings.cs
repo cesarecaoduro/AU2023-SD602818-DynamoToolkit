@@ -18,7 +18,7 @@ public static class Greetings
     {
         return new Dictionary<string, object>()
         {
-            {"output", $"Hello, {input} after the PR!" },
+            {"output", $"Hello, {input} after the PR! Now I am doing it live!" },
         };
     }
 }

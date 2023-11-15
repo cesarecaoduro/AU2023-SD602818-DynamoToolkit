@@ -18,7 +18,7 @@ public static class Greetings
     {
         return new Dictionary<string, object>()
         {
-            {"output", $"Hello, {input} after a PR during AU class LIVE!" },
+            {"output", $"Hello, {input} after a PR!" },
         };
     }
 }
